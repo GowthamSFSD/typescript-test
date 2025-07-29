@@ -11,3 +11,5 @@ export const createUser = async (req: Request, res: Response) => {
   const user = await User.create({ username, email });
   res.status(201).json(user);
 };
+
+
